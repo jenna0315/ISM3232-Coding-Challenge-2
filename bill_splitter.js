@@ -19,4 +19,17 @@ console.log("Customer Bill:",Bill)
 console.log("Customer Tip:",calculateTip(Bill,tip))
 
 //Implement and populate arrays for bills, tips, and totals
-let bills = {275, 40, 430}
+let bills = [275, 40, 430]
+const tips = bills.map(bills=>calculateTip(bills))
+let totals = bills.map((bills,index) => ((bills + tips[index])))
+console.log("Customer Bills:",bills)
+console.log("Customer Tips:",tips)
+console.log("Customer Totals:",totals)
+
+let bills2 = [125, 555, 44]
+const tips2 = bills2.map(bills2=>calculateTip(bills2))
+let totals2 = bills2.map((bills2,index) => ((bills2 + tips2[index])))
+console.log("Customer Bills 2:",bills2)
+console.log("Customer Tips 2:",tips2)
+console.log("Customer Totals 2:",totals2)
+
