@@ -10,3 +10,10 @@ The bill was $${customerBill}
 The tip was $${customertip}
 The total was $${customerTotal}`
 console.log(customerSummary)
+
+//Create and test calculatecustomerTip function
+let Bill = 100
+function calculatecustomerTip(Bill,tip){return Bill+(300 < Bill < 50) ? (.2*Bill) : (.15*Bill)}
+let  tip = (300 < Bill < 50) ? (.2*Bill) : (.15*Bill)
+console.log("Customer Bill:",Bill)
+console.log("Customer Tip:",calculatecustomerTip(Bill,tip))
